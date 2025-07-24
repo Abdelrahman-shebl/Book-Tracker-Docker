@@ -1,0 +1,10 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+#book-list li {
+  transition: all 0.2s ease;
+}
+#book-list li:hover {
+  background-color: #f0f8ff;
+}

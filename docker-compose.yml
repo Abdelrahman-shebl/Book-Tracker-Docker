@@ -1,0 +1,39 @@
+version: "3.8"
+
+services:
+  frontend:
+    container_name: frontend
+    build: ./frontend
+
+    ports:
+      - "3000:80"
+
+
+
+
+  backend:
+    container_name: backend
+    build: ./backend
+    ports:
+      - "5000:5000"
+
+      
+
+    depends_on:
+      - db
+
+    environment:
+       MONGO_URI: mongodb://db:27017/bookdb
+
+
+  db:
+    image: mongo:6
+    container_name: db
+    environment:
+      MONGO_INITDB_DATABASE: bookdb
+
+    volumes:
+      - book_db:/data/db
+
+volumes:
+  book_db:

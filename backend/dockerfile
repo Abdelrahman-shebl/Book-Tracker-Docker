@@ -1,0 +1,14 @@
+FROM node:18-alpine3.17
+
+WORKDIR /app
+
+COPY package.json .
+
+RUN npm install
+
+
+COPY . .
+
+ENV MONGO_URI='mongodb://db:27017/bookdb'
+
+CMD [ "npm", "start" ]
