@@ -8,8 +8,8 @@ A simple full-stack Book Manager web application built with:
 - ✅ Node.js + Express (backend REST API)
 - ✅ MongoDB (database)
 - ✅ HTML + Bootstrap + JavaScript (frontend)
-- 🐳 Docker & Docker Compose for containerization
-
+- 🐳 Docker & Docker Compose for containerization 
+ 
 ---
 
 ## 🚀 Getting Started
