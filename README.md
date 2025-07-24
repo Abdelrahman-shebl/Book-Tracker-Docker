@@ -9,7 +9,7 @@ A simple full-stack Book Manager web application built with:
 - ✅ MongoDB (database)
 - ✅ HTML + Bootstrap + JavaScript (frontend)
 - 🐳 Docker & Docker Compose for containerization 
- 
+     
 ---
 
 ## 🚀 Getting Started
